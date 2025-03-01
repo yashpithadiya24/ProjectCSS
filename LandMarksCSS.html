@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="HomeCSS.html">
     <style>
         body{
+            margin: 0px;
+            padding: 0px;
             background-color: ;
             background-image: linear-gradient(90deg,rgb(250, 250, 249),antiquewhite,rgb(250, 250, 249)); 
         }
@@ -14,9 +16,10 @@
         
     .header{
         background-image: linear-gradient(90deg,white,rgb(255, 115, 0),white);
-        height: 150px;
+        height: 100px;
         width: 100vw;
-
+        position: sticky;
+        top: 0;
         align-content: center;
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -36,10 +39,17 @@
     img{
         border: 15px solid salmon;
         border-radius: 2px;
-        margin-left: 550px;
+        margin-left: 690px;
         width: 400px;
       
-        
+     
+    }
+    .h{
+        margin-left: 500px;
+    }
+    table{
+        width: 1500px;
+        height: 200px;
     }
     h3{
        
@@ -48,6 +58,7 @@
         color: beige;
         font-size: 25px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100vw;
     }
     h4{
         font-family: 20px;
@@ -76,6 +87,87 @@
         text-align: center;
         font-size: larger;
     }
+    @media screen and (max-width:600px) {
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+        background-image: linear-gradient(90deg,white,rgb(255, 115, 0),white);
+        height: 70px;
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        align-content: center;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+
+    }
+    a{
+        width: 30px;
+        height: 15px;
+        border-radius: 10px;
+        color: black;
+        background-image: linear-gradient(45deg,white,rgb(0, 217, 255),white);
+        padding: 5px;
+       
+        margin: 10px;
+    }
+    img{
+        border: 15px solid salmon;
+        border-radius: 2px;
+        margin-left: 150px;
+        width: 400px;
+      
+     
+    }
+    .h{
+        margin-left: 50px;
+    }
+    table{
+        width: 100%;
+        height: 50%;
+    }
+    
+    h3{
+       
+        text-align: center;
+        background-color: rgb(35, 35, 119);
+        color: beige;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100vw;
+    }
+    h4{
+        font-family: 20px;
+        text-align: center;
+        color: black;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: larger;
+    }
+    .footer{
+        background-image: radial-gradient(white,rgb(105, 196, 40));
+        height: 150px;
+        align-content: center;
+        text-align: center;
+    }
+    li{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left: 30px;
+        font-size: large;
+        padding: 5px;
+    }
+    blockquote{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-size: larger;
+    }
+    }
+
     </style>
 </head>
 <body>
@@ -85,10 +177,11 @@
         <a href="./culture.html">Culture</a>
         <a href="./cuisine.html">Cuisine</a>
         <a href="./ContactUs.html">Contact Us</a>
-        <h3 style="margin: 40px;background-image: linear-gradient(90deg,white,rgb(35, 35, 119),white);"><mark>Famous Landmarks in India</mark></h3>
+       
     </div>
+    <h3>Famous Landmarks in India</h3>
     <br>
-    <b style="font-size: large;margin-left: 500px;">Explore the iconic landmarks that define the heritage and history of India.</b>
+    <div class="h"><b>Explore the iconic landmarks that define the heritage and history of India.</b></div>
     <br>
     <h3>Iconic Monuments</h3>
     <br>
@@ -109,7 +202,7 @@
     <p>India is a union of states,each with its unique cultural and geographical identity.Here's detailed table listing some Indian states,their capitals,and key data:</p>
     <br>
     <h4 align="center">List of Indian States</h4>
-    <table border="1" align="center" width="1000px" height="200px" cellspacing="0">
+    <table border="1" align="center" cellspacing="0">
         <tr>
             <th rowspan="2" align="center">State</th>
             <th rowspan="2" align="center">Capital</th>
@@ -151,7 +244,7 @@
     <p>Did you know?India has the largest postal network in the world,with over 1,50,000 post officies, including one located on a floating structure in Dal Lake,Srinagar.</p>
     <br>
     <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">The floating post office in Dal Lake,Srinagar</p>
-    <img src="../WebDesignProject-main/dal_lake.jpg" alt="404">
+    <img src="C:\Users\pkkap\OneDrive\Desktop\YASH\WebDesignProject-main\dal_lake.jpg" alt="404">
     <br>
     <div class="footer">
     <p><a href="./home.html"><-Back to Home</a></p>
